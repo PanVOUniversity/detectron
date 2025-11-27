@@ -22,7 +22,7 @@ RUN wget https://bootstrap.pypa.io/pip/3.8/get-pip.py && \
 # See https://pytorch.org/ for other options if you use a different version of CUDA
 RUN pip install --user tensorboard cmake onnx   # cmake from apt-get is too old
 RUN pip install --user torch==1.10.2+cu113 torchvision==0.11.3+cu113 \
-	-f https://download.pytorch.org/whl/cu113/torch_stable.html
+	--extra-index-url https://download.pytorch.org/whl/cu113
 
 RUN pip install --user 'git+https://github.com/facebookresearch/fvcore'
 # install detectron2
