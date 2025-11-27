@@ -10,7 +10,7 @@ ENV HOME=/home/appuser
 WORKDIR $HOME
 
 # Let torchvision find libtorch
-ENV CMAKE_PREFIX_PATH=$HOME/.local/lib/python3.6/site-packages/torch/
+ENV CMAKE_PREFIX_PATH=$HOME/.local/lib/python3.8/site-packages/torch/
 
 RUN sudo apt-get update && sudo apt-get install libopencv-dev --yes
 

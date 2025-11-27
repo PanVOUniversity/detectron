@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu18.04
+FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
 # use an older system (18.04) to avoid opencv incompatibility (issue#3524)
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -14,7 +14,7 @@ USER appuser
 WORKDIR /home/appuser
 
 ENV PATH="/home/appuser/.local/bin:${PATH}"
-RUN wget https://bootstrap.pypa.io/pip/3.6/get-pip.py && \
+RUN wget https://bootstrap.pypa.io/get-pip.py && \
 	python3 get-pip.py --user && \
 	rm get-pip.py
 
