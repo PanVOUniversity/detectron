@@ -1,5 +1,5 @@
 FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
-# use an older system (18.04) to avoid opencv incompatibility (issue#3524)
+# use Ubuntu 20.04 (Python 3.8) to stay compatible with current dependencies
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
@@ -21,7 +21,8 @@ RUN wget https://bootstrap.pypa.io/pip/3.8/get-pip.py && \
 # install dependencies
 # See https://pytorch.org/ for other options if you use a different version of CUDA
 RUN pip install --user tensorboard cmake onnx   # cmake from apt-get is too old
-RUN pip install --user torch==1.10 torchvision==0.11.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+RUN pip install --user torch==1.10.2+cu113 torchvision==0.11.3+cu113 \
+	-f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 RUN pip install --user 'git+https://github.com/facebookresearch/fvcore'
 # install detectron2
