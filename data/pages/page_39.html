@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 39</title>
+  
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0; 
+        padding: 0; 
+        width: 100vw;
+        height: 100%; 
+        overflow-x: hidden;
+        box-sizing: border-box; 
+        font-family: Arial, sans-serif;
+      }
+      .section {
+        width: 100vw; 
+        min-height: 100vh; 
+        position: relative; 
+        z-index: 1;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start;
+        font-size: 2rem; 
+        scroll-snap-align: start; 
+        transition: background .3s; 
+        padding: 2rem;
+        overflow-x: hidden;
+      }
+      .s1 { background: hsl(0, 50%, 92%); }
+.s2 { background: hsl(60, 50%, 92%); }
+.s3 { background: hsl(120, 50%, 92%); }
+.s4 { background: hsl(180, 50%, 92%); }
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1vw;
+        margin: 1rem 0;
+        overflow: hidden;
+        max-width: 100vw;
+      }
+      .block p {
+        margin: 1vw 0 0 0;
+        font-size: 1.1rem;
+        text-align: center;
+        word-wrap: break-word;
+      }
+      body {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100vh;
+      }
+    </style>
+    
+</head>
+<body>
+  <section class="section s1">Hero секция<div class="block" style="width:20vw; height:22vh; position:absolute; top:51vh; left:75vw; z-index:227; border-radius:30px; background:rgb(223, 219, 219); box-shadow:0 2px 10px rgba(0,0,0,0.1);"><p>Phasellus placerat enim.</p></div>
+<div class="block" style="width:46vw; height:50vh; position:absolute; top:42vh; left:24vw; z-index:22; border-radius:45px; background:rgb(236, 241, 245); box-shadow:0 6px 13px rgba(0,0,0,0.2);"><p>Lorem ipsum dolor sit amet.</p></div>
+<div class="block" style="width:17vw; height:35vh; position:absolute; top:0vh; left:18vw; z-index:850; border-radius:0px; background:rgb(214, 235, 229); box-shadow:0 4px 13px rgba(0,0,0,0.1);"><img src="https://picsum.photos/seed/9507/200/300" alt="random" style="width:100%; height:60%;"><p>Lorem ipsum dolor sit amet.</p></div>
+<div class="block" style="width:28vw; height:10vh; position:absolute; top:51vh; left:10vw; z-index:899; border-radius:0px; background:rgb(203, 243, 219); box-shadow:0 6px 15px rgba(0,0,0,0.2);"><p>Nulla facilisi.</p></div></section><section class="section s2">About секция<div class="block" style="width:45vw; height:12vh; position:absolute; top:24vh; left:12vw; z-index:713; border-radius:17px; background:rgb(218, 255, 203); box-shadow:0 3px 9px rgba(0,0,0,0.2);"><img src="https://picsum.photos/seed/9651/200/300" alt="random" style="width:100%; height:60%;"><p>Porttitor mattis sapien.</p></div>
+<div class="block" style="width:41vw; height:44vh; position:absolute; top:49vh; left:4vw; z-index:832; border-radius:0px; background:rgb(226, 252, 211); box-shadow:0 3px 8px rgba(0,0,0,0.3);"><p>Morbi nec metus.</p></div>
+<div class="block" style="width:24vw; height:46vh; position:absolute; top:17vh; left:60vw; z-index:495; border-radius:0px; background:rgb(236, 225, 237); box-shadow:0 5px 9px rgba(0,0,0,0.1);"><img src="https://loremflickr.com/320/240/landscape?lock=5820" alt="random" style="width:100%; height:60%;"><p>Morbi nec metus.</p></div>
+<div class="block" style="width:26vw; height:11vh; position:absolute; top:0vh; left:25vw; z-index:803; border-radius:9px; background:rgb(208, 214, 202); box-shadow:0 8px 12px rgba(0,0,0,0.1);"><img src="https://picsum.photos/seed/356/200/300" alt="random" style="width:100%; height:60%;"><p>Morbi nec metus.</p></div></section><section class="section s3">Features секция<div class="block" style="width:19vw; height:30vh; position:absolute; top:28vh; left:46vw; z-index:993; border-radius:0px; background:rgb(216, 217, 250); box-shadow:0 4px 11px rgba(0,0,0,0.2);"><p>Consectetur adipiscing elit.</p></div>
+<div class="block" style="width:13vw; height:46vh; position:absolute; top:32vh; left:14vw; z-index:413; border-radius:6px; background:rgb(210, 217, 233); box-shadow:0 8px 15px rgba(0,0,0,0.3);"><img src="https://picsum.photos/seed/4197/200/300" alt="random" style="width:100%; height:60%;"><p>Lorem ipsum dolor sit amet.</p></div>
+<div class="block" style="width:15vw; height:26vh; position:absolute; top:52vh; left:72vw; z-index:93; border-radius:36px; background:rgb(242, 239, 246); box-shadow:0 8px 13px rgba(0,0,0,0.2);"><img src="https://picsum.photos/seed/6111/200/300" alt="random" style="width:100%; height:60%;"><p>Phasellus placerat enim.</p></div>
+<div class="block" style="width:45vw; height:12vh; position:absolute; top:13vh; left:15vw; z-index:532; border-radius:0px; background:rgb(228, 217, 250); box-shadow:0 4px 13px rgba(0,0,0,0.2);"><img src="https://picsum.photos/seed/2693/200/300" alt="random" style="width:100%; height:60%;"><p>Phasellus placerat enim.</p></div>
+<div class="block" style="width:16vw; height:12vh; position:absolute; top:10vh; left:72vw; z-index:5; border-radius:0px; background:rgb(227, 229, 251); box-shadow:0 8px 14px rgba(0,0,0,0.3);"><p>Porttitor mattis sapien.</p></div>
+<div class="block" style="width:49vw; height:12vh; position:absolute; top:84vh; left:45vw; z-index:872; border-radius:21px; background:rgb(225, 217, 221); box-shadow:0 3px 9px rgba(0,0,0,0.3);"><img src="https://picsum.photos/seed/1067/200/300" alt="random" style="width:100%; height:60%;"><p>Morbi nec metus.</p></div>
+<div class="block" style="width:34vw; height:24vh; position:absolute; top:75vh; left:10vw; z-index:355; border-radius:17px; background:rgb(253, 221, 239); box-shadow:0 6px 8px rgba(0,0,0,0.3);"><p>Maecenas non leo.</p></div>
+<div class="block" style="width:10vw; height:14vh; position:absolute; top:35vh; left:28vw; z-index:330; border-radius:8px; background:rgb(227, 246, 214); box-shadow:0 3px 14px rgba(0,0,0,0.3);"><p>Nulla facilisi.</p></div></section><section class="section s4">Contact секция<div class="block" style="width:15vw; height:11vh; position:absolute; top:10vh; left:35vw; z-index:991; border-radius:12px; background:rgb(201, 227, 252); box-shadow:0 7px 15px rgba(0,0,0,0.3);"><p>Phasellus placerat enim.</p></div>
+<div class="block" style="width:49vw; height:41vh; position:absolute; top:15vh; left:47vw; z-index:300; border-radius:25px; background:rgb(225, 255, 214); box-shadow:0 3px 14px rgba(0,0,0,0.2);"><img src="https://picsum.photos/seed/523/200/300" alt="random" style="width:100%; height:60%;"><p>Lorem ipsum dolor sit amet.</p></div>
+<div class="block" style="width:33vw; height:50vh; position:absolute; top:11vh; left:5vw; z-index:311; border-radius:0px; background:rgb(211, 217, 205); box-shadow:0 6px 15px rgba(0,0,0,0.1);"><p>Morbi nec metus.</p></div>
+<div class="block" style="width:16vw; height:20vh; position:absolute; top:54vh; left:81vw; z-index:692; border-radius:24px; background:rgb(202, 224, 202); box-shadow:0 7px 9px rgba(0,0,0,0.1);"><img src="https://picsum.photos/seed/3758/200/300" alt="random" style="width:100%; height:60%;"><p>Maecenas non leo.</p></div>
+<div class="block" style="width:11vw; height:16vh; position:absolute; top:28vh; left:30vw; z-index:60; border-radius:0px; background:rgb(248, 225, 251); box-shadow:0 2px 12px rgba(0,0,0,0.1);"><img src="https://picsum.photos/seed/8550/200/300" alt="random" style="width:100%; height:60%;"><p>Porttitor mattis sapien.</p></div>
+<div class="block" style="width:13vw; height:22vh; position:absolute; top:78vh; left:76vw; z-index:265; border-radius:0px; background:rgb(249, 211, 222); box-shadow:0 5px 15px rgba(0,0,0,0.1);"><img src="https://loremflickr.com/320/240/landscape?lock=420" alt="random" style="width:100%; height:60%;"><p>Consectetur adipiscing elit.</p></div>
+<div class="block" style="width:35vw; height:20vh; position:absolute; top:54vh; left:14vw; z-index:956; border-radius:44px; background:rgb(221, 239, 241); box-shadow:0 8px 15px rgba(0,0,0,0.2);"><p>Maecenas non leo.</p></div>
+<div class="block" style="width:20vw; height:10vh; position:absolute; top:26vh; left:79vw; z-index:778; border-radius:0px; background:rgb(231, 215, 229); box-shadow:0 7px 9px rgba(0,0,0,0.3);"><img src="https://picsum.photos/seed/5772/200/300" alt="random" style="width:100%; height:60%;"><p>Morbi nec metus.</p></div></section>
+</body>
+</html>

@@ -3,6 +3,8 @@ output
 instant_test_output
 inference_test_output
 
+#keys
+ssh/
 
 *.png
 *.json
